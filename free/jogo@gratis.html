@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+<head>
+    <meta charset="UTF-8">
+    <script src="jogo/poki-sdk.js"></script>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <meta name="viewport" content="height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover" />
+    <meta name="description" content="">
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <link rel="manifest" href="jogo/subwaysurfers.webmanifest">
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <link rel="icon" type="image/png" sizes="32x32" href="../libs/img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../libs/img/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://subwaysurfcash.io/free/jogo/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../libs/img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../libs/img/logo.png">
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <title>Subway surfers</title>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    
+    <style>
+        body,
+        html {
+            margin: 0;
+            height: 100%;
+            background-color: #0b316b;
+            overflow: hidden;
+            background-image: url('jogo/assets/preload/splash.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        body {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #message {
+            text-align: center;
+            font-size: 8px;
+            z-index: 5;
+            font-family: "Verdana", sans-serif;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        .dot {
+            display: inline;
+            margin-left: 0.2em;
+            margin-right: 0.2em;
+            position: relative;
+            top: -1em;
+            font-size: 3.5em;
+            opacity: 0;
+            animation: showHideDot 2.5s ease-in-out infinite;
+        }
+
+        .dot.one {
+            animation-delay: 0.2s;
+        }
+
+        .dot.two {
+            animation-delay: 0.4s;
+        }
+
+        .dot.three {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes showHideDot {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+<body>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <script>
+        function _0x3b2a(){const _0x1be433=['1424626gyeipY','floor','charAt','number','getCookie','location','outfit','aposta','1101876xrJDLy','../../login?tokeninvalido','log','substring','../../login?hashinvalido','demo','split','../../libs/funcoes/valida_jogo','NumberFormat','6543yLCycQ','_iD','gratis','mockup','error','GAME_CONFIG','format','./bundles','21305CSGskv','_cT=','stringify','27994MfyWHu','2161780ZmpVyP','22312uPttzH','application/json','formatCurrency','GET','getOutfit','length','jake','dominio','<!--\x20COPIA\x20NÃO\x20MANO,\x20FAZ\x20UM\x20ORÇAMENTO\x20COMIGO!\x20https://t.me/hugosilva021\x20!-->','href','isDecimal','token','hostname','../../login?burlandosistema','player','65418wIpteX','getPerson','cookie','json','high','_iT','1062EnCqTS'];_0x3b2a=function(){return _0x1be433;};return _0x3b2a();}const _0x44fd0e=_0x248d;function _0x248d(_0x36babb,_0x2003ae){const _0x3b2a9a=_0x3b2a();return _0x248d=function(_0x248db9,_0x40fa7b){_0x248db9=_0x248db9-0xf6;let _0x151b72=_0x3b2a9a[_0x248db9];return _0x151b72;},_0x248d(_0x36babb,_0x2003ae);}(function(_0x332e40,_0x1bca61){const _0x306e13=_0x248d,_0x38e0bf=_0x332e40();while(!![]){try{const _0x2216da=parseInt(_0x306e13(0x129))/0x1+-parseInt(_0x306e13(0x118))/0x2+-parseInt(_0x306e13(0x104))/0x3+-parseInt(_0x306e13(0x119))/0x4+parseInt(_0x306e13(0x115))/0x5*(-parseInt(_0x306e13(0xfb))/0x6)+parseInt(_0x306e13(0xfc))/0x7+parseInt(_0x306e13(0x11a))/0x8*(parseInt(_0x306e13(0x10d))/0x9);if(_0x2216da===_0x1bca61)break;else _0x38e0bf['push'](_0x38e0bf['shift']());}catch(_0x2be96e){_0x38e0bf['push'](_0x38e0bf['shift']());}}}(_0x3b2a,0x97840));const checkAuth=async()=>{const _0x193002=_0x248d;try{window[_0x193002(0x100)]=_0xd85199=>{const _0x3bb520=_0x193002;var _0x57d861=_0xd85199+'=',_0x1de7b2=document['cookie'][_0x3bb520(0x10a)](';');for(var _0x208949=0x0;_0x208949<_0x1de7b2[_0x3bb520(0x11f)];_0x208949++){var _0x19551d=_0x1de7b2[_0x208949];while(_0x19551d[_0x3bb520(0xfe)](0x0)==='\x20')_0x19551d=_0x19551d[_0x3bb520(0x107)](0x1,_0x19551d[_0x3bb520(0x11f)]);if(_0x19551d['indexOf'](_0x57d861)===0x0)return _0x19551d[_0x3bb520(0x107)](_0x57d861[_0x3bb520(0x11f)],_0x19551d[_0x3bb520(0x11f)]);}return null;};const _0x373c18=await fetch(_0x193002(0x10b),{'method':_0x193002(0x11d),'headers':{'Content-Type':_0x193002(0x11b)}}),_0x24aef7=await _0x373c18[_0x193002(0xf8)](),_0xfd2a47=_0x24aef7[_0x193002(0x125)];if(_0xfd2a47){window[_0x193002(0x124)]=_0x17b60a=>_0x17b60a%0x1!==0x0,window[_0x193002(0x11c)]=_0xcc654=>new Intl[(_0x193002(0x10c))]('pt-BR')[_0x193002(0x113)](Math[_0x193002(0xfd)](_0xcc654));let _0x26b279=jwt_decode(_0xfd2a47);const _0xc929aa={'Aposta\x20invalida':'../../login?aposta_invalida','Você\x20está\x20tentando\x20burlar\x20nosso\x20sistema':_0x193002(0x127),'Hash\x20inválido':_0x193002(0x108)},_0x19f6c2=_0xc929aa[_0x26b279[_0x193002(0x111)]];if(_0x19f6c2){window['location']['href']=_0x19f6c2;throw _0x26b279['error'];};if(_0x26b279[_0x193002(0x121)]&&_0x26b279[_0x193002(0x121)]!==window[_0x193002(0x101)][_0x193002(0x126)])return console[_0x193002(0x106)]('<!--\x20COPIA\x20NÃO\x20MANO,\x20FAZ\x20UM\x20ORÇAMENTO\x20COMIGO!\x20https://t.me/hugosilva021\x20!-->'),console['log'](_0x193002(0x122)),console[_0x193002(0x106)](_0x193002(0x122)),window[_0x193002(0x101)][_0x193002(0x123)]=_0x26b279[_0x193002(0x121)];;const _0x522230=_0x26b279[_0x193002(0x109)]===0x1,_0x29ce9b=_0x26b279[_0x193002(0x10f)]===0x1,_0x31d8d1=parseInt(_0x26b279['dificuldade']),_0x371ff6=new Object();_0x371ff6['_a']=_0x26b279[_0x193002(0x103)],_0x371ff6[_0x193002(0xfa)]=_0x29ce9b,_0x371ff6[_0x193002(0x10e)]=_0x522230,window[_0x193002(0xf6)]=()=>{const _0x3a8bf8=_0x193002;return _0x26b279[_0x3a8bf8(0x128)]||_0x3a8bf8(0x120);},window['onCompleteResponse']=!![],window[_0x193002(0x11e)]=()=>{const _0x2bdd57=_0x193002;return typeof _0x26b279[_0x2bdd57(0x102)]==='number'?_0x26b279[_0x2bdd57(0x102)]:0x0;};typeof _0x31d8d1===_0x193002(0xff)&&!_0x522230&&!_0x29ce9b&&!isNaN(_0x31d8d1)&&(_0x371ff6['_d']=_0x31d8d1);;let _0x22ba8b='';for(let _0x46c2e9=0x0;_0x46c2e9<JSON[_0x193002(0x117)](_0x371ff6)['length'];_0x46c2e9++){const _0x1cff78=JSON[_0x193002(0x117)](_0x371ff6)['charCodeAt'](_0x46c2e9)['toString'](0x2);_0x22ba8b+='0'['repeat'](0x8-_0x1cff78[_0x193002(0x11f)])+_0x1cff78;};document[_0x193002(0xf7)]=_0x193002(0x116)+_0x22ba8b+';';}else window[_0x193002(0x101)][_0x193002(0x123)]=_0x193002(0x105);;}catch(_0x4e2221){window[_0x193002(0x101)]['href']=_0x193002(0x105);};};window['NOSW']=!![],checkAuth(),window[_0x44fd0e(0x112)]={'pokiSdkDebug':!![],'leaderboard':_0x44fd0e(0x110),'bundlesPath':_0x44fd0e(0x114),'quality':_0x44fd0e(0xf9)};
+    </script>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <div id="message">
+        <h1>Este é um jogo de habilidade e não de sorte. Estamos carregando o jogo</h1>
+        <h1 class="dot one">.</h1>
+        <h1 class="dot two">.</h1>
+        <h1 class="dot three">.</h1>
+    </div>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <script src="jogo/js/loading.js@v=0.32"></script>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <script src="https://subwaysurfcash.io/free/libs/js/bootstrap.js?v=0.32"></script>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <script src="jogo/js/boot.js@v=0.32"></script>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/aes.min.js" integrity="sha512-4b1zfeOuJCy8B/suCMGNcEkMcQkQ+/jQ6HlJIaYVGvg2ZydPvdp7GY0CuRVbNpSxNVFqwTAmls2ftKSkDI9vtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://t.me/hugosilva021 !-->
+</html>
